@@ -1,8 +1,3 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/Vishnu2001RV/Image_Segmentation/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 # In Interactive_Segmentation.ipynb follow these steps to get the HSV high and low value to be put in Image_Segmentation
 
 <h1 align="center">Image Segmentation</h1>
@@ -21,7 +16,6 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
             <td><img src="Markdown_Images/ProperSegmentation_Result.jpg" alt="" border=3 height=400 width=400></img></td>
         </tr>
 </table>
-
 
 # Image Segmentation
 
