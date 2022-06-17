@@ -5,15 +5,10 @@
 
 
 1. [Project_Tractor](./Project_Tractor)
-   d
 2. [SASTRA_PRUVITY](./SASTRA_PRUVITY)
-   d
 3. [SatelliteImaging](./SatelliteImaging)
-   d
 4. [Static_Page_Handler-main](./Static_Page_Handler-main)
-   d
 5. [FILE_TRANSFER_USING_DATAOUTPUT_STREAM](./FILE_TRASFER_USING_DATAOUTPUT_STREAM)
-   s
 6. [Image_Segmentation](./Image_Segmentation)
 
 
