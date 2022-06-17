@@ -1,0 +1,28 @@
+sudo docker run --rm -it -p 8601:8601 -v /mnt/d/flutterSatellite/MainServer/satellite_Server/:/satellite_Server --entrypoint /bin/bash tensorflow/serving
+
+satellite_models
+tensorflow_model_server --rest_api_port=8601 --model_config_file=/satellite_Server/models.config.a --allow_version_labels_for_unavailable_models
+
+
+
+touch tf_serving_entrypoint.sh
+tensorflow_model_server --port=8500 --rest_api_port="${PORT}" --model_config_file=/satellite_Server/models.config.a --allow_version_labels_for_unavailable_models
+
+Image.asset('assets/images/ndvi.2.tif')
+
+https:Request
+http://localhost:8601/v1/models/resnet_vh/versions/1
+https://satellite-imaging.herokuapp.com/v1/models/resnet_vh/versions/1
+
+alias heroku=/home/bart/XGraph/bin/heroku
+
+####################################################################################################################################
+data = json.dumps({"signature_name":"serving_default","instances":image.tolist()})
+
+url = "http://localhost:8601/v1/models/satellite_models/versions/3:predict"
+response = request.post(url,data=data,headers= {"content_type":"application/json"})
+
+predictions = json.loads(response.text)
+print(decode_predictions(np.array(predictions["predictions"])))
+####################################################################################################################################
+
