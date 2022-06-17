@@ -1,0 +1,30 @@
+
+
+/*
+ * 1. SignUp 
+ *          - Unique Key
+ *          - Instant Key(sent as response)
+ * 2. Login
+ *         - During log in validity checked and response as instantase key is sent
+ * 
+ *     1. Using instance key they can contact any api and get its resourse as output
+ *     2. eg request for login image etc
+ *     3. instance key is a list assigned to each user
+ *     4. Each instance key with expiry time is added as a list so that each new login is detected
+ *     5. for signout instance key is expired
+ *  
+ * 3. Computer connected is also sent as login    {user:password}  -> response {accepted:{instancekey:interval}} 
+ *                                                                 -> response {expired:{instancekey:inverval}}
+ * 
+ *                                                STORAGE:- {user1:{instanceKey1:endTime},user2:{instanceKey2:endTime}}
+ * 
+ * 4. When we re run the server every expired instance key is deleted
+ * 
+ * 5. During signup db.signup
+ * 6. During login -> check users present in db.signup and compare with its password then do response as in 3.
+ * 7. Every api response will sent header with instance key so that it can be check and then responded
+ * 8. even it checks if the user and the intant key are matched
+ * 9. /<userid>/---- is the routing scinerio
+ * 
+ * 10. If expired back to login
+ */
