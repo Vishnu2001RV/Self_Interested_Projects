@@ -1,8 +1,6 @@
 <h1><center>Self_Interested_Projects<center></h1>
-<hr>
 
 <h2> Index </h2>
-<hr>
 
 1. [Project_Tractor](./Project_Tractor)
 2. [SASTRA_PRUVITY](./SASTRA_PRUVITY)
@@ -13,7 +11,6 @@
 
 
 <h1>1. Project TRACTOR </h1>
-<hr>
 
 [Project_Tractor](./Project_Tractor)
 
@@ -39,7 +36,6 @@ The Animation was done using
 </table>
 
 <h1>2. SASTRA PRUVITY APP</h1>
-<hr>
 
 [SASTRA_PRUVITY](./SASTRA_PRUVITY)
 
@@ -53,7 +49,6 @@ For more information :- [README.md](./SASTRA_PRUVITY/README.md)
 </table>
 
 <h1>3. Satellite Imaging (Uses Tensorflow Serving,docker,heroku) </h1>
-<hr>
 
 [SatelliteImaging](./SatelliteImaging)
 
@@ -62,14 +57,12 @@ For more Information:- [README.md](./SatelliteImaging/README.md)
 <img src="./README_IMAGE_FILES/GUIOUTPUT.png" alt="" border=3 ></img>
 
 <h1>4. Static Page Handler with Python controller (eg for controlling redirection etc)</h1>
-<hr>
 
 [Static_Page_Handler-main](./Static_Page_Handler-main)
 
 For more Information :- [README.md](./Static_Page_Handler-main/README.md)
 
 <h1>5. File Transfer Using DataOutput Stream </h1>
-<hr>
 
 [FILE_TRANSFER_USING_DATAOUTPUT_STREAM](./FILE_TRASFER_USING_DATAOUTPUT_STREAM)
 
@@ -79,7 +72,6 @@ For more cases handled by this File Transfer:- [SecureFile_Transfer_OUTPUT.pdf](
 
 
 <h1>6. Image Segmentation (Modified Original version to check how segmentation can be handled manually)</h1>
-<hr>
 
 [Image_Segmentation](./Image_Segmentation)
 
