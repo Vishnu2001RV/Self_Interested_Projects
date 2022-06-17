@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  perspective: 1000px;
+}
+
+.info {
+    
+    height: fit-content;
+    /* width: fit-content; */
+}
+.heading{
+  position: sticky;
+  top:0;
+  width: 100%;
+  height:13.5em;
+  background-color: white;
+  box-shadow: -2px -8px 17px 15px rgb(255 255 255 / 75%);
+  
+  transition: height 0.5s ease-out;
+}
+.heading h1{
+  font-size: 1.4rem;
+  position: absolute;
+  top: 84%;
+}
+#container
+{
+  position:relative;
+  width:101%;
+  height:100%;
+  text-align: center;
+
+}
+.card {
+  /* left: 10em;
+  top: 20px; */
+  max-height: 13.5em;
+  min-width: 10em;
+  margin: 20px;
+  width: 20rem;
+  /* width: 18rem; */
+  /* height: fit-content; */
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 30px;
+  padding: 0rem 2rem;
+  transition: max-height 0.5s;
+  overflow: -moz-scrollbars-none;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.scroll{
+  overflow:scroll; 
+}
+.scroll::-webkit-scrollbar { width:0 !important;height:0 !important }
+
+.card:hover{
+  max-height: 16.5em;
+}
+
+
+.Equipement {
+  /* min-height: 35vh; */
+  position: sticky;
+  top:0;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 0em);
+  z-index: 2;
+  transition: all 0.5s ease-out;
+}
+
+.info h1 {
+  font-size: 1.2rem;
+  transition: all 0.75s ease-out;
+}
+.info h3 {
+  font-size: 0.8em;
+  padding: 0.3rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+.sizes button {
+
+  padding: 0.5rem 1em;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+button.active {
+  background: #585858;
+  color: white;
+}
+.purchase {
+  margin-top: 2rem;
+   margin-bottom: 1em;
+  transition: all 0.75s ease-out;
+}
+.purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
