@@ -7,11 +7,11 @@
 
 [Folder Structures](./tree.md)
 
-<h3>Step2:- First Run MasterU2Net.ipynb to generate the <b> Training Dataset</b> in output folder</h3>
+<h3>Step2:- Run MasterU2Net.ipynb to generate the <b> Training Dataset</b> in output folder</h3>
 
 [MasterU2Net](./MasterU2Net.ipynb)
 
-<h3>Step3:- First Run Reshaped_Dataset_OUTPUTS.ipynb to generate the <b> Training Dataset based on different size</b> for EfficientNet Classification models  into <i>Reshaped_Dataset_OUTPUTS</i> folder</h3>
+<h3>Step3:-Run Reshaped_Dataset_OUTPUTS.ipynb to generate the <b> Training Dataset based on different size</b> for EfficientNet Classification models  into <i>Reshaped_Dataset_OUTPUTS</i> folder</h3>
 
 [Reshaped_Dataset_OUTPUTS](./Reshaped_Dataset_OUTPUTS.ipynb)
 
