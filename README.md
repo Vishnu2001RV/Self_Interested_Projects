@@ -8,6 +8,7 @@
 4. [Static_Page_Handler-main](./Static_Page_Handler-main)
 5. [FILE_TRANSFER_USING_DATAOUTPUT_STREAM](./FILE_TRASFER_USING_DATAOUTPUT_STREAM)
 6. [Image_Segmentation](./Image_Segmentation)
+7. [Cardamom Leaf Segmentation (U2NET) and Disease Detection (EfficientNetV2)](./Cardamom_leaf_disease_Detection_via_U2net)
 
 
 <h1>1. Project TRACTOR </h1>
@@ -95,8 +96,8 @@ For more Information:- [README.md](./Image_Segmentation/README.md)
         </tr>
 </table>
 
-<h1>7. Cardamom_leaf_disease_Detection_via_U2net</h1>
+<h1>7. Cardamom Leaf Segmentation (U2NET) and Disease Detection (EfficientNetV2)</h1>
 
-[(U2NET Segmentation of images) and Cardamom Leaf Disease Detection Using EfficientNetV2](Cardamom_leaf_disease_Detection_via_U2net/README.md)
+[README](Cardamom_leaf_disease_Detection_via_U2net/README.md)
 
 For more Information:- [OVERVIEW / OUTPUT](Cardamom_leaf_disease_Detection_via_U2net/Cardamom_and_U2Net.pdf)
