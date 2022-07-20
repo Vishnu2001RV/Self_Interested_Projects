@@ -1,3 +1,45 @@
+<h1 align="center">Folder Structure:- data</h1>
+<h2>Corresponding training images should be arranged based on the given folder structure.</h2>
+<p>The train-test split is given in the PDF</p>
+
+``` python
+data:
+¦   
+¦
++---cardamom_dataset
+¦   +---test
+¦   ¦   +---Blight1000
+¦   ¦   +---Healthy_1000
+¦   ¦   +---Phylosticta_LS_1000
+¦   +---train
+¦   ¦   +---Blight1000
+¦   ¦   +---Healthy_1000
+¦   ¦   +---Phylosticta_LS_1000
+¦   +---val
+¦       +---Blight1000
+¦       +---Healthy_1000
+¦       +---Phylosticta_LS_1000
++---grape_dataset
+    +---test
+    ¦   +---Grape___Black_rot
+    ¦   +---Grape___Esca_(Black_Measles)
+    ¦   +---Grape___healthy
+    ¦   +---Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+    +---train
+    ¦   +---Grape___Black_rot
+    ¦   +---Grape___Esca_(Black_Measles)
+    ¦   +---Grape___healthy
+    ¦   +---Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+    +---val
+        +---Grape___Black_rot
+        +---Grape___Esca_(Black_Measles)
+        +---Grape___healthy
+        +---Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+
+```
+
+<h1 align="center"> THE COMPLETE FOLDER STRUCTURE </h1>
+
 ``` python
 Cardamom_leaf_disease_Detection_via_U2net:
 ¦   cardamom_dataset_5_Fold_Result.csv
@@ -7,7 +49,6 @@ Cardamom_leaf_disease_Detection_via_U2net:
 ¦   Reshaped_Dataset_OUTPUTS.ipynb
 ¦   sample_masked(s0).jpg
 ¦   sample_masked(s6).jpg
-¦   tree.txt
 ¦   u2net_SegmentFolders.py
 ¦   u2net_util.py
 ¦   
