@@ -18,7 +18,7 @@ Deployed Version:- [https://project-tractor.herokuapp.com/](https://project-trac
 
 For more information:- [README.md](./Project_Tractor/README.md)
 
-The Animation was done using 
+The Animation was done using RIVE
 
 <table>
     <tr>
