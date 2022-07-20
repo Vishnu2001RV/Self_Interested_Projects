@@ -94,3 +94,9 @@ For more Information:- [README.md](./Image_Segmentation/README.md)
             <td><img src="./README_IMAGE_FILES/ProperSegmentation_Result.jpg" alt="" border=3 height=400 width=400></img></td>
         </tr>
 </table>
+
+<h1>7. Cardamom_leaf_disease_Detection_via_U2net</h1>
+
+[(U2NET Segmentation of images) and Cardamom Leaf Disease Detection Using EfficientNetV2](Cardamom_leaf_disease_Detection_via_U2net/README.md)
+
+For more Information:- [OVERVIEW / OUTPUT](Cardamom_leaf_disease_Detection_via_U2net/Cardamom_and_U2Net.pdf)
