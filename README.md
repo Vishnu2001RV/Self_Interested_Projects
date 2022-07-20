@@ -1,4 +1,4 @@
-<h1><center>Self_Interested_Projects<center></h1>
+<h1><center>Interested_Projects<center></h1>
 
 <h2> Index </h2>
 
