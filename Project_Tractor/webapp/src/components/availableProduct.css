@@ -42,27 +42,19 @@ body {
 
 }
 .card {
-  /* left: 10em;
-  top: 20px; */
-    max-height: 9rem;
-      height: 100%;
-      max-width: 13rem;
-      width: auto;
-  max-height: 13.5em;
-  min-width: 10em;
-  margin: 20px;
-  width: 20rem;
-  /* width: 18rem; */
-  /* height: fit-content; */
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-  border-radius: 30px;
-  /* padding: 0rem 2rem; */
-  transition: max-height 0.5s;
-  overflow: -moz-scrollbars-none;
-      background: white;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+      max-height: 13.5em;
+      min-width: 10em;
+      margin: 20px;
+      width: 13rem;
+      /* width: 18rem; */
+      /* height: fit-content; */
+      display: inline-block;
+      overflow: hidden;
+      position: relative;
+      border-radius: 30px;
+      transition: max-height 0.5s;
+      overflow: -moz-scrollbars-none;
+      box-shadow: 0 20px 20px rgb(0 0 0 / 20%), 0px 0px 50px rgb(0 0 0 / 20%);
 }
 .scroll{
   overflow:scroll; 
@@ -71,11 +63,16 @@ body {
 
 .card:hover{
   max-height: 16.5em;
+  
 }
 
 
 .Equipement {
   /* min-height: 35vh; */
+  max-height: 9rem;
+  height: 100% !important;
+  max-width: 13rem;
+  width:auto;
   position: sticky;
   top:0;
   height: auto;
@@ -136,12 +133,15 @@ button.active {
 
 
 .close {
-  position: absolute;
-  right: 32px;
-  /* top: 32px; */
-  width: 32px;
-  height: 32px;
-  opacity: 0.3;
+    position: absolute;
+      left: 86%;
+      top: 2%;
+      width: 32px;
+      height: 32px;
+      opacity: 0.3;
+      z-index: 2;
+      background: white;
+      border-radius: 24px;
 }
 
 .close:hover {
@@ -150,12 +150,14 @@ button.active {
 
 .close:before,
 .close:after {
-  position: absolute;
-  left: 15px;
-  content: ' ';
-  height: 33px;
-  width: 2px;
-  background-color: #333;
+      z-index: 1;
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 33px;
+      width: 5px;
+      /* background: #de1b1b; */
+      background-color: #000000;
 }
 
 .close:before {

@@ -1,0 +1,317 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+@keyframes color {
+    0% {
+        background:
+            linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+    }
+
+    99% {
+        background:
+            linear-gradient(rgba(155, 89, 182, 0.6), rgba(196, 102, 0, 0.6));
+    }
+
+    100% {
+        background:
+            linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+    }
+}
+/* body {
+    background: #33CCCC;
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
+} */
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+
+.SignUp,.UpdateProfile {
+    /* height: 100%; */
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    /*Image only BG fallback*/
+    background-color: white;
+    background-image: linear-gradient(-45deg,
+                rgba(59, 173, 227, 1) 0%,
+                rgba(87, 111, 230, 1) 25%,
+                rgba(152, 68, 183, 1) 51%,
+                rgba(255, 53, 127, 1) 100%);
+    /* background:linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+     */
+    animation: AnimateBG 20s ease infinite;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    /* animation: color 9s ease infinite; */
+    /*background = gradient + image pattern combo*/
+    
+        /* -webkit-transition: background 1s ease-in-out;
+            -moz-transition: background 1s ease-in-out;
+            -o-transition: background 1s ease-in-out; */
+            /* transition: background 1s ease-in-out; */
+            /* animation-name: background;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-duration: 68s;
+                animation-direction: normal; */
+}
+
+
+
+
+body {
+    font-family: montserrat, arial, verdana;
+}
+.profileImage{
+    width: 15em;
+    height: 15em;
+    border-radius: 100%;
+}
+.equipmentImage {
+    width: 100%;
+    height: 20em;
+}
+/*form styles*/
+#msform {
+        top: 9%;
+            width: 31em;
+            left: -30%;
+    width: 31em;
+    margin: 4em auto;
+    text-align: center;
+    position: relative;
+}
+
+
+
+#updater {
+    top:-6%;
+    left: 19.8%;
+    width: 50em;
+    margin: 4em auto;
+    text-align: center;
+    position: relative;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5em;
+    box-shadow: 0 0 4em 1em rgb(0 0 0 / 40%);
+    padding: 1.5em 2em;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    position: relative;
+
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+/*inputs*/
+#msform input,
+#msform textarea {
+    padding: 1em;
+        border: 0.1em solid #ccc;
+        border-radius: 0.5em;
+        margin-bottom: 1em;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: montserrat;
+        color: #2C3E50;
+        font-size: 1em;
+}
+.inputred {
+    border: 1px solid rgb(247, 7, 7) !important;
+    color: #f21a0a !important;
+}
+
+/*buttons*/
+#msform .action-button {
+    width: 7em;
+        background: #000000;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 0.4em;
+        cursor: pointer;
+        padding: 16px 1px;
+        margin: 18px 5px;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+/*headings*/
+.fs-title {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/*progressbar*/
+#progressbar {
+    margin-bottom: 3em;
+        display: flex;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 1.2em;
+    line-height: 1.2em;
+    display: block;
+    font-size: 1em;
+    color: #333;
+    background: white;
+    border-radius: 3px;
+    margin: 0 auto 1em auto;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: 0;
+    /*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #27AE60;
+    color: white;
+}
+
+
+button {
+    height: 3em;
+    position: relative;
+    color: #054231;
+    letter-spacing: 1px;
+    margin: 20px;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    background: white;
+}
+
+.save {
+    font-weight: 1000;
+    left: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 9em;
+    box-shadow: 4px 11px 25px 0px #000d08;
+    
+}
+
+.edit {
+    color: #fff;
+    width: 180px;
+}
+
+button:hover {
+    left: 0;
+    color: #fff;
+    height: 4em;
+    width: -3em;
+    background: linear-gradient(-45deg, rgba(59, 173, 227, 1) 0%, rgba(87, 111, 230, 1) 25%, rgba(152, 68, 183, 1) 51%, rgba(255, 53, 127, 1) 100%);
+    box-shadow: 0px 0px 20px 0px #ffffff;
+}
+
+button:focus {
+    outline: none;
+}
+
+.Login {
+    /* height: 100%; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /*Image only BG fallback*/
+    background-color: white;
+    background-image: linear-gradient(-45deg,
+            rgba(59, 173, 227, 1) 0%,
+            rgba(87, 111, 230, 1) 25%,
+            rgba(152, 68, 183, 1) 51%,
+            rgba(255, 53, 127, 1) 100%);
+
+
+    animation: AnimateBG 20s ease infinite;
+
+    /* animation: color 9s ease infinite; */
+    /*background = gradient + image pattern combo*/
+
+    /* -webkit-transition: background 1s ease-in-out;
+            -moz-transition: background 1s ease-in-out;
+            -o-transition: background 1s ease-in-out; */
+    /* transition: background 1s ease-in-out; */
+    /* animation-name: background;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-duration: 68s;
+                animation-direction: normal; */
+}
