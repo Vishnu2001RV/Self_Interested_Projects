@@ -14,7 +14,7 @@
 
 [Project_Tractor](./Project_Tractor)
 
-Deployed Version:- [https://equipment-broadcast.herokuapp.com](https://equipment-broadcast.herokuapp.comhttps://project-tractor.herokuapp.com)
+Deployed Version:- [https://equipment-broadcast.herokuapp.com](https://equipment-broadcast.herokuapp.com)
 
 For more information:- [README.md](./Project_Tractor/README.md)
 
@@ -28,7 +28,7 @@ The Animation was done using RIVE(TOOL)
 
 <h3>OVERVIEW</h3>
 
-1. SignUp LoginPage
+1. SignUp and LoginPage
 2. Home Page For other Navigations. (With high quality Animations for Users)
 3. With API Self Time out using UNIQUE Tokens(For security) therefore responding towards inactive sessions.
 
