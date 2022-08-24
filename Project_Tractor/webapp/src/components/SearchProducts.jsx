@@ -4,6 +4,7 @@ import $ from 'jquery';
 // import './availableProduct.css';
 
 import { ProductContents } from './DisplayProduct.js';
+// import { StaticproductDetails } from './SaticproductDetails';
 
 
 import {
@@ -489,6 +490,7 @@ class SearchProducts extends React.Component {
                         </div>
                     {(this.state.prodisplay)?<>
 
+                            
                             <fieldset className="start" id="equipstart">
                                 <h2 className="fs-title">Update Your Equipment</h2>
                                 <h3 className="fs-subtitle">Equipment Details</h3>
@@ -551,10 +553,8 @@ class SearchProducts extends React.Component {
                                 <fieldset className="Nstart">
                                     <h2 className="fs-title">Personal Details</h2>
                                     <h3 className="fs-subtitle">We will never sell it</h3>
-
                                     <input type="text" name="designation" placeholder="Designation" value={this.state.personalDetails.designation} />
                                     <input type="text" name="phoneno" placeholder="Phone" value={this.state.personalDetails.phoneno} />
-
                                     <input type="button" name="previous" className="previous action-button" defaultValue="Previous" onClick={this.handleChange_previousclick} />
                                     <input type="button" name="next" className="next action-button" defaultValue="Next" onClick={this.handleChange_nextclick} />
                                 </fieldset>
@@ -572,7 +572,7 @@ class SearchProducts extends React.Component {
                                 </fieldset>
                                 
                          
-                    
+                                {/* <StaticproductDetails details={this.state.personalDetails}/> */}
                     
                     </>
                     }
@@ -587,3 +587,4 @@ class SearchProducts extends React.Component {
 }
 
 export default SearchProducts;
+

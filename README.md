@@ -10,32 +10,64 @@
 6. [Image_Segmentation](./Image_Segmentation)
 7. [Cardamom Leaf Segmentation (U2NET) and Disease Detection (EfficientNetV2)](./Cardamom_leaf_disease_Detection_via_U2net)
 
-
 <h1>1. Project TRACTOR </h1>
 
 [Project_Tractor](./Project_Tractor)
 
-Deployed Version:- [https://project-tractor.herokuapp.com/](https://project-tractor.herokuapp.com/)
+Deployed Version:- [https://equipment-broadcast.herokuapp.com](https://project-tractor.herokuapp.com)
 
 For more information:- [README.md](./Project_Tractor/README.md)
 
 The Animation was done using RIVE(TOOL)
 
+<h3>Programing Languages and Database Used</h3>
+1. React Js (Web Application) <br>
+2. Dart     (Server) <br>
+3. MongoDB  (Database) <br>
+4. JQuery (For Additional Client Features)
+
+<h3>OVERVIEW</h3>
+
+1. SignUp LoginPage
+2. Home Page For other Navigations. (With high quality Animations for Users)
+3. With API Self Time out using UNIQUE Tokens(For security) therefore responding towards inactive sessions.
+
 <table>
     <tr>
-    <th><img src="./README_IMAGE_FILES/PROJECT_TRACTOR1.jpg" alt="" border=3 ></img></th>
-    <th><img src="./README_IMAGE_FILES/PROJECT_TRACTOR2.jpg" alt="" border=3 ></img></th>
+    <th><img src="./README_PROJECT_TRACTOR_FILES\Login SignUp.png" alt="" border=3 ></img></th>
+    <th><img src="./README_PROJECT_TRACTOR_FILES\UpdatePage.png" alt="" border=3 ></img></th>
     </tr>
 <tr>
-    <th><img src="./README_IMAGE_FILES/PROJECT_TRACTOR3.jpg" alt="" border=3 ></img></th>
-    <th><img src="./README_IMAGE_FILES/PROJECT_TRACTOR4.jpg" alt="" border=3 ></img></th>
-    </tr>
-<tr>
-    <th><img src="./README_IMAGE_FILES/PROJECT_TRACTOR5.jpg" alt="" border=3 ></img></th>
-    <th><img src="./README_IMAGE_FILES/PROJECT_TRACTOR6.jpg" alt="" border=3 ></img></th>
+    <th><img src="./README_PROJECT_TRACTOR_FILES\HomePage.png" alt="" border=3 ></img></th>
+    <th><img src="./README_PROJECT_TRACTOR_FILES\API TimeOut.png" alt="" border=3 ></img></th>
     </tr>
 </table>
 
+
+* Setting Up new Equipment/Product.
+* Could update the Equiped Product later by choosein them and Changing the Details.
+
+<table>
+<tr>
+    <th><img src="./README_PROJECT_TRACTOR_FILES\Set Equipment.png" alt="" border=3 ></img></th>
+    </tr>
+</table>
+
+* One Could Drop the Equipment on the same equipment Page.
+
+<table>
+<tr>
+<th><img src="./README_PROJECT_TRACTOR_FILES\UpdateEquipmentdetails.png" alt="" border=3 ></img></th></tr>
+</table>
+
+* The  user could Search for the availability of the products he needs and get the details of the Vendor and the Equipment.
+
+<table>
+<table>
+<tr><td colspan="2"><img src="./README_PROJECT_TRACTOR_FILES\Search.png" alt="" border=3 ></img></th></tr>
+<tr>
+<th><img src="./README_PROJECT_TRACTOR_FILES\UpdateEquipmentdetails 2.png" alt="" border=3 ></img></th></tr>
+</table>
 <h1>2. SASTRA PRUVITY APP</h1>
 
 [SASTRA_PRUVITY](./SASTRA_PRUVITY)
@@ -71,13 +103,11 @@ For more cases handled by this File Transfer:- [SecureFile_Transfer_OUTPUT.pdf](
 
 <img src="./README_IMAGE_FILES/FILESERVER.png" alt="" border=3 ></img>
 
-
 <h1>6. Image Segmentation (Modified Original version to check how segmentation can be handled manually)</h1>
 
 [Image_Segmentation](./Image_Segmentation)
 
 For more Information:- [README.md](./Image_Segmentation/README.md)
-
 
 <h1 align="center">Image Segmentation</h1>
 <table border="5" bordercolor="black" align="center">

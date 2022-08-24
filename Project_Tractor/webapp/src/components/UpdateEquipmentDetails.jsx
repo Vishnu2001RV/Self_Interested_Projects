@@ -384,7 +384,7 @@ class UpdateEquipmentDetails extends React.Component {
                             <input type="button" name="next" className="next action-button" value="Next" onClick={this.handleChange_nextclick} />
                         </fieldset>
                         <fieldset className="Nstart">
-                            <h2 className="fs-title">Profile Photo</h2>
+                            <h2 className="fs-title">Equipment Photo</h2>
 
                             <input type="file" onChange={this.handleChange_profileupload} />
                             {(this.state.imageupdated) ? <img src={this.file} style={{ "border-radius": "0" }} alt='' className="profileImage" id="profileImage"  /> : <div></div>}

@@ -1,6 +1,7 @@
 // import { post } from "jquery";
 
-let base_url = process.env.BASE_URL || 'http://localhost:8000';
+// let base_url = process.env.BASE_URL || 'http://localhost:8000';
+let base_url = process.env.BASE_URL || 'https://dart-tractor-server.herokuapp.com';
 
 let url_with_email = base_url + '/' + localStorage.getItem("emailId")??'';
 

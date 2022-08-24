@@ -13,6 +13,7 @@ export function ProductContents(param) {
     let equipDetails = param.details.equipmentDetails;
     let persondetails = param.details.personal;
 
+
     // console.log(persondetails);
     // ClientGetAnyEquipmentImage(persondetails.emailId, equipDetails.equipmentName).then
     //     ((Result) => {
@@ -42,6 +43,7 @@ export function ProductContents(param) {
 
         param.updateCard.setState({ equipmentDetails: equipDetails });
         param.updateCard.setState({ personalDetails: persondetails });
+
         // console.log(equipDetails);
         $("#profileImage").css({ "display": "none" });
         $("#profileImage2").css({ "display": "none" });
