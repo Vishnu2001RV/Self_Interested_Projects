@@ -29,8 +29,9 @@ The Animation was done using RIVE(TOOL)
 <h3>OVERVIEW</h3>
 
 1. SignUp and LoginPage
-2. Home Page For other Navigations. (With high quality Animations for Users)
-3. With API Self Time out using UNIQUE Tokens(For security) therefore responding towards inactive sessions.
+2. Update Profile Details.
+3. Home Page For other Navigations. (With high quality Animations for Users)
+4. With API Self Time out using UNIQUE Tokens(For security) therefore responding towards inactive sessions.
 
 <table>
     <tr>
