@@ -35,14 +35,17 @@ The Animation was done using RIVE(TOOL)
 <table>
     <tr>
     <th><img src="./README_PROJECT_TRACTOR_FILES\Login SignUp.png" alt="" border=3 ></img></th>
+</tr>
+<tr>
     <th><img src="./README_PROJECT_TRACTOR_FILES\UpdatePage.png" alt="" border=3 ></img></th>
     </tr>
 <tr>
     <th><img src="./README_PROJECT_TRACTOR_FILES\HomePage.png" alt="" border=3 ></img></th>
+</tr>
+<tr>
     <th><img src="./README_PROJECT_TRACTOR_FILES\API TimeOut.png" alt="" border=3 ></img></th>
     </tr>
 </table>
-
 
 * Setting Up new Equipment/Product.
 * Could update the Equiped Product later by choosein them and Changing the Details.
