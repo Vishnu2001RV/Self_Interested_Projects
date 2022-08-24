@@ -14,7 +14,7 @@
 
 [Project_Tractor](./Project_Tractor)
 
-Deployed Version:- [https://equipment-broadcast.herokuapp.com](https://project-tractor.herokuapp.com)
+Deployed Version:- [https://equipment-broadcast.herokuapp.com](https://equipment-broadcast.herokuapp.comhttps://project-tractor.herokuapp.com)
 
 For more information:- [README.md](./Project_Tractor/README.md)
 
