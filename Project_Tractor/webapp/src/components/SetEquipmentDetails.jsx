@@ -95,7 +95,7 @@ class SetEquipmentDetails extends React.Component {
 
                                                 if (result2 === "set") {
 
-                                                    // this_temp.setState({ success: true });
+                                                    this_temp.setState({ success: true });
                                                 }
                                                 else {
 
