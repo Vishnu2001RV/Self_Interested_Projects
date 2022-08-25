@@ -1,0 +1,3 @@
+[submodule "equipment-broadcast"]
+	path = equipment-broadcast
+	url = https://git.heroku.com/equipment-broadcast.git
