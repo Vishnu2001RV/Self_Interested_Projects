@@ -100,7 +100,7 @@ class ImageData {
 }
 
 //todo123
-@JsonSerializable()
+@git ()
 class PersonDetails {
   final String firstname;
   final String lastname;
