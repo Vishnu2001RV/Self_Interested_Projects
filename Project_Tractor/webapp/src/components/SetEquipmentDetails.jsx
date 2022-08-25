@@ -76,21 +76,21 @@ class SetEquipmentDetails extends React.Component {
 
 
         if (event.target.name === "submit") {
-
-
+          
+            let this_temp = this;
             ClientSetEquipmentWithEmails(this.state).then(
                 (result) => {
                     if (result === "set") {
-                        if (this.state.imagepresent) {
+                        if (this_temp.state.imagepresent) {
                             // let myImage = new Image();
                             // myImage.src = this.file;
-                            let this_temp = this;
+                            
                             // console.log("SDf");
-                            fetch(this.file).then(r => r.blob()).then(
+                            fetch(this_temp.file).then(r => r.blob()).then(
                                 (temp) => {
                                     this_temp.convertBlobToBase64(temp).then((str) => {
 
-                                        ClientSetEquipmentImage(str,this.state.equipmentName).then(
+                                        ClientSetEquipmentImage(str,this_temp.state.equipmentName).then(
                                             (result2) => {
 
                                                 if (result2 === "set") {
@@ -114,7 +114,7 @@ class SetEquipmentDetails extends React.Component {
 
                         }
                         else
-                            this.setState({ success: true });
+                            this_temp.setState({ success: true });
                     }
                     else {
 
