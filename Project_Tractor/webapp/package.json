@@ -11,7 +11,7 @@
     "react-dom": "^17.0.2",
     "react-native": "^0.65.1",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "rive-react": "latest",
     "web-vitals": "^1.1.2"
   },
@@ -19,9 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages-d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -40,9 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  },
-  "homepage": "https://Vishnu2001RV.github.io/equipment_tractor"
+  }
 }
