@@ -1,4 +1,5 @@
 // TODO Implement this library.
+import 'package:path/path.dart' as p;
 // using cookie one could say for next tab if login is needed or not (save the instace key on cokkie)
 
 import 'dart:convert';
@@ -100,7 +101,7 @@ class ImageData {
 }
 
 //todo123
-@git ()
+// @git ()
 class PersonDetails {
   final String firstname;
   final String lastname;
@@ -247,6 +248,25 @@ DateTime setExpiryTime() {
   return DateTime.now().add(const Duration(seconds: 120));
 }
 
+Future<List> readJsonFile(String filePath) async {
+  var input = await File(filePath).readAsString();
+  var map = jsonDecode(input);
+
+  List keylist = map.keys.toList();
+
+  // for (var key in keylist) {
+  //   print(key);
+  // }
+
+  var lst = List.filled(2, '', growable: true);
+  if (map['ENABLED'] == 'True') {
+    lst[0] = map['MONGO_PASSWORD'] ?? '';
+    lst[1] = map['MONGODB_URI'] ?? '';
+  }
+
+  return lst;
+}
+
 dynamic collection1;
 dynamic collection2;
 dynamic collection3;
@@ -256,17 +276,27 @@ dynamic collection6;
 dynamic collection7;
 
 void databaseOpen() async {
-  var mongo_password = Platform.environment['MONGO_PASSWORD'];
-  var mongo_uri = Platform.environment['MONGODB_URI'];
+  // add the environment variables to the fiels or set using export path for mongodb
 
-  if (mongo_uri != null) {
+  var abspath = p.absolute('env.json');
+  print("Loading Environmental Variables for mongo " + abspath + "\n");
+  var l = await readJsonFile(abspath);
+
+  // print('Current process path: ${p.current}');
+
+  var mongo_password = Platform.environment['MONGO_PASSWORD'] ?? l[0];
+  var mongo_uri = Platform.environment['MONGODB_URI'] ?? l[1];
+
+  if (mongo_uri != '' && mongo_uri != null) {
+    print("Going with MONGODB CLOUD");
     mongo_uri = mongo_uri.replaceAll('<password>', mongo_password!);
   } else {
+    print("Going with local mongodb database");
     String host = Platform.environment['MONGO_DART_DRIVER_HOST'] ?? '127.0.0.1';
     String port = Platform.environment['MONGO_DART_DRIVER_PORT'] ?? '27017';
     mongo_uri = 'mongodb://$host:$port/project_tractor';
   }
-
+  // print(mongo_uri);
   var db = await Db.create(mongo_uri);
   // var db = Db(mongo_uri.toString());
 
@@ -498,14 +528,12 @@ dynamic setUserDetails(Request request, String emailId) async {
   dynamic result = await tokenValidator(collection2, token, emailId);
 
   if (result["status"] == "active") {
-      
-  
     await collection1.updateOne({
       "emailId": emailId
     }, {
       "\$set": {
         "firstname": p.firstname,
-        "password" : p.password,
+        "password": p.password,
         "lastname": p.lastname,
         "designation": p.designation,
         "phoneno": p.phoneno,
@@ -516,7 +544,6 @@ dynamic setUserDetails(Request request, String emailId) async {
     });
 
     return {'status': 'set'};
-    
   } else if (result["status"] == "expired") {
     return {'status': 'expired'};
   } else {
@@ -746,7 +773,7 @@ dynamic getEquipmentDetailsOtherClient(Request request, String emailId) async {
           {"emailId": emailIdtemp},
         );
         dynamic equip = equipmentDetail1;
-        if (displayall=="no") {
+        if (displayall == "no") {
           for (var i in equipmentDetail1['token']) {
             if (i["equipmentName"].toString() == p.equipmentName) {
               equip = i;

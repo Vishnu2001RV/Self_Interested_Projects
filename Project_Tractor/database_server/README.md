@@ -10,3 +10,5 @@ SERVER:-
    dart run --enable-vm-service
    ```
 3. Reference at end of each file
+4. Either create cluster from mongodb cloud and add the uri, password in env.json
+   - OR Use mongodb locally. So that the server could access it using mongodb drivers.
