@@ -2,8 +2,9 @@
 
 ## `do edit the .env file to add the base url so that there no CORS issues. (if local server then hide REACT_APP_BASE_URL variable in .env)`
 
+## <br>`Ensures the url is matched with the url response from server`
 
-# Getting Started with Create React App
+# <br>Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
