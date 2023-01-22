@@ -1,5 +1,9 @@
 # **Project Tractor**
 
+# IF deployed the app in any server
+
+## `do edit the .env file to add the base url so that there no CORS issues. (if local server then hide REACT_APP_BASE_URL variable in .env)`
+
 **Part 1:- (Only Tractors)**
 
 **Problem-Statement:-** Farmers find it difficult to buy tractors or fix their existing one( but need to complete the cropping in that season itself).

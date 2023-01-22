@@ -1,5 +1,6 @@
 # IF deployed the app in any server
-## `do edit the .env file to add the base url`
+
+## `do edit the .env file to add the base url so that there no CORS issues. (if local server then hide REACT_APP_BASE_URL variable in .env)`
 
 
 # Getting Started with Create React App
